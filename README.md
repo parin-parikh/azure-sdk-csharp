@@ -1,45 +1,43 @@
-Creating Storage Account on Azure using C# and .NET
+# Azure Storage Account Creation with C# and .NET
+
 This repository provides a simple example demonstrating how to create a storage account on Azure using C# and .NET Core. By following this guide, you'll be able to quickly set up a storage account programmatically, which can be useful for automating infrastructure provisioning or integrating storage account creation into your applications.
 
-Prerequisites
-Before you begin, ensure you have the following:
+## Prerequisites
 
-.NET SDK installed on your development machine.
-An Azure account. If you don't have one, you can create a free account.
-Azure CLI installed on your machine or Azure Cloud Shell access.
-Setup
-Clone this repository to your local machine:
+Before you begin, ensure you have:
 
-bash
-Copy code
-git clone https://github.com/yourusername/azure-storage-account-csharp.git
-cd azure-storage-account-csharp
-Install the Azure SDK package for storage management:
+- [.NET SDK](https://dotnet.microsoft.com/download) installed.
+- An [Azure account](https://azure.microsoft.com/free/) (if you don't have one).
+- Azure CLI installed or access to Azure Cloud Shell.
 
-bash
-Copy code
-dotnet add package Azure.ResourceManager.Storage
-Update the appsettings.json file with your Azure subscription ID and other details.
+## Setup
 
-Usage
-Open the solution in your preferred C# IDE or text editor.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/azure-storage-account-csharp.git
+   cd azure-storage-account-csharp
+   ```
 
-Navigate to the Program.cs file.
+2. **Install Dependencies**:
+   ```bash
+   dotnet restore
+   ```
 
-Locate the Main method and update the following variables:
+3. **Update Configuration**:
+   - Open `appsettings.json`.
+   - Update with your Azure subscription ID and other details.
 
-resourceGroupName: Name of the resource group where the storage account will be created.
-location: Azure region where the storage account will be located.
-storageAccountName: Name of the storage account to be created.
-Run the application:
+## Usage
 
-bash
-Copy code
-dotnet run
-After successful execution, verify the creation of the storage account in the Azure portal or using Azure CLI.
+1. **Run the Application**:
+   ```bash
+   dotnet run
+   ```
 
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
+2. **Verify**:
+   After successful execution, verify the creation of the storage account in the Azure portal or using Azure CLI.
 
-License
-This project is licensed under the MIT License.
+
+## Useful Resource
+- [Microsoft Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net)
+---
